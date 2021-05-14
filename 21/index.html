@@ -15,25 +15,43 @@
     <link rel='stylesheet' href='https://dpalme.github.io/Peoria/css/peoria-0-5-0.css'>
     <link rel='stylesheet' href='https://dpalme.github.io/Peoria/css/normalize.css'>
     <script src="https://dpalmer.in/Peoria/peoria_2.js"></script>
+    <style>
+        a,
+        a:visited {
+            color: inherit
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+        .just-l {
+            justify-content: start;
+        }
+    </style>
 </head>
 
 <body style="color: #005F6F;background: #EEF6F8;">
-    <div class="container mt-lg">
-        <img src="https://f4.bcbits.com/img/a2018375996_10.jpg" alt="Cover" class="fixed col-5 mb-n">
-        <div class="col-5 col-7-o col-margin-bottom">
-            <h1 class="title-1">21</h1>
-            <h2 class="my-n" style="text-transform: none;">formas menores</h2>
-            <div class="mt-lg">
-                <a href="https://formasmenores.bandcamp.com/album/21" class="d-block mb-sm">bandcamp</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
-                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm">soundcloud</a>
+    <div class="container">
+        <img src="https://f4.bcbits.com/img/a2018375996_10.jpg" alt="Cover"
+            class="fixed col-5 mb-n back image-cover mt-sm">
+        <div class="col-5 col-7-o">
+            <div class="flex just-l mb-1">
+                <h1 class="title-1">21-</h1>
+                <span class="h2 lh-1">formas<br>menores</span>
+            </div>
+            <div class="flex" style="font-size: 1.25rem">
+                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm mr-1">spotify</a>
+                <a href="https://formasmenores.bandcamp.com/album/21" class="d-block mb-sm mr-1">bandcamp</a>
+                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm mr-1">soundcloud</a>
+                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm mr-1">apple music</a>
+                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm mr-1">deezer</a>
+                <a href="https://soundcloud.com/diego_pb/sets/21a" class="d-block mb-sm mr-1">tidal</a>
             </div>
         </div>
     </div>
@@ -53,7 +71,8 @@
         function init() {
             container = object({
                 type: "div",
-                class: "overflow-h fixed center-a back"
+                class: "overflow-h fixed center-a back-2",
+                style: "filter: saturate(60%)"
             });
             document.body.appendChild(container);
 
