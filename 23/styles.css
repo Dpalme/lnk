@@ -1,0 +1,51 @@
+/* Frame 31 */
+
+@import url('https://fonts.googleapis.com/css2?family=Darker Grotesque:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@500&display=swap');
+
+body {
+  background: url('decors.png'), url('B.jpg'),
+    #06675c;
+  background-blend-mode: color, normal;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overscroll-behavior: contain;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 50%;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-feature-settings: 'liga' off, 'kern' off;
+
+  color: #ea1111;
+}
+
+.subtitle {
+  white-space: nowrap;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+
+  text-align: left;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+
+  color: #ea1111;
+
+  mix-blend-mode: normal;
+}
